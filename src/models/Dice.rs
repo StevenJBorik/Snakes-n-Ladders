@@ -9,7 +9,7 @@ pub struct Dice {
 }
 
 impl Dice {
-    fn roll() {
+    pub fn roll(mut self) -> Dice {
         let mut rng = rand::thread_rng(); 
         return rng.gen_range(minValue..maxValue + 1); 
     }
