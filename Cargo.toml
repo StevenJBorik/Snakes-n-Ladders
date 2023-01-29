@@ -5,4 +5,15 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+name = "snakenladder"
+path = "src/snakenladder.rs"
+
+[[bin]]
+name = "SNL"
+path = "src/main.rs"
+
 [dependencies]
+termion = "1.5.1"
+text_io = "0.1.7"
+rand = "*"
